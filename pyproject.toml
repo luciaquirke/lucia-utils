@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "lucia-utils"
+version = "0.1.0"
+description = ""
+authors = ["Lucia Quirke <luciarosequirke@gmail.com>"]
+readme = "README.md"
+packages = [{include = "lucia_utils"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+transformer-lens = "^1.2.2"
+neel-plotly = {git = "https://github.com/neelnanda-io/neel-plotly"}
+plotly = "^5.14.1"
+circuitsvis = "^1.39.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
